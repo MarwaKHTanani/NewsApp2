@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="header">
+        <div class="left-header">
+          <h1 class="logo">NEW'S</h1>
+        </div>
+        <div class="rigth-header">
+          <ul class="nav-links">
+            <li><a href="#top-news"> Top News</a></li>
+            <li class="dropdown">
+              <a href="#categories">Categories</a>
+              <ul class="drop-cat">
+                <li><a href="#politics">Politics</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Economy</a></li>
+                <li><a href="#tech">Tech</a></li>
+              </ul>
+            </li>
+            <li><a href="#top-blogs">Top blogs</a></li>
+          </ul>
+        </div>
+        <div class="lightdark">
+        <i class="fas fa-moon toggle-btn"></i>
+        
+    </div>
+      </nav>
+    </header>
+    <section class="top-sec" id="top-news">
+      <h2 class="top-title">Top News</h2>
+      <div class="slider-wrapper">
+        <button class="prev">&lt;</button>
+        <div id="slider"></div>
+        <button class="next">&gt;</button>
+      </div>
+    </section>
+
+    <section class=" py-12" id="categories">
+      <h2 class="text-center text-3xl font-bold text-[#669bbc] mb-10">
+        Categories
+      </h2>
+
+      <div class="max-w-6xl mx-auto mb-12 px-4" id="politics">
+        <h3 class="text-2xl font-semibold text-[#669bbc] mb-4">Politics</h3>
+        <div class="flex flex-wrap gap-6 justify-center politics-news"></div>
+      </div>
+
+      <div class="max-w-6xl mx-auto mb-12 px-4" id="tech">
+        <h3 class="text-2xl font-semibold text-[#669bbc] mb-4">Tech</h3>
+        <div class="flex flex-wrap gap-6 justify-center tech-news"></div>
+      </div>
+    </section>
+
+    <section class=" py-12" id="top-blogs">
+      <h2 class="text-center text-3xl font-bold text-[#669bbc] mb-10">
+        Top Blogs
+      </h2>
+      <div
+        class="max-w-6xl mx-auto flex flex-wrap gap-6 justify-center blog-news"
+      ></div>
+    </section>
+
+    <footer class="bg-[#003049] text-white text-center p-4 ">
+      <p>© 2025 NEW'S. All rights reserved.</p>
+    
+      <p>Contact us: info@news.com</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+  </body>
+</html>
